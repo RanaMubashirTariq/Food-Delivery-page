@@ -241,36 +241,17 @@ export default function HeroBannerSection  () {
              <motion.h1 
                className="font-mochiy-pop-one font-regular text-[128px] max-[1300px]:text-[110px] max-[1100px]:text-[90px] max-[767px]:text-[60px] max-[500px]:text-[48px] leading-[100%] tracking-[-8%] text-[#bc430d]"
                whileHover={{ scale: 1.05 }}
-               animate={{ 
-                 textShadow: [
-                   "0 0 0px rgba(188, 67, 13, 0)",
-                   "0 0 20px rgba(188, 67, 13, 0.5)",
-                   "0 0 0px rgba(188, 67, 13, 0)"
-                 ]
-               }}
                transition={{ duration: 3, repeat: Infinity }}
              >
                    FAST
              </motion.h1>
               
                <motion.div 
-                 className="w-[280px] max-[1300px]:w-[260px] max-[500px]:w-[100px] max-[767px]:w-[150px] flex flex-col items-start font-poppins font-bold text-[#000000]/70  text-5xl leading-[57px] max-[1300px]:text-[48px] max-[1100px]:text-[40px] max-[767px]:text-[28px] max-[500px]:text-[22px] max-[500px]:mt-3 max-[1100px]:mt-[20px]  mt-[30px]"
+                 className="w-[280px] max-[1300px]:w-[260px] max-[500px]:w-[100px] max-[767px]:w-[150px] flex flex-col items-start font-poppins font-bold text-[#000000]/70  text-5xl leading-[57px] max-[1300px]:text-[48px] max-[1300px]:leading-[47px] max-[1100px]:text-[40px] max-[1300px]:leading-[37px] max-[767px]:text-[28px] max-[767px]:leading-[24px] max-[500px]:text-[22px] max-[500px]:mt-3 max-[1100px]:mt-[20px]   mt-[30px]"
                  variants={itemVariants}
                >
-                <motion.span
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.3, duration: 0.6 }}
-                >
                   Food
-                </motion.span>
-                <motion.span
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.5, duration: 0.6 }}
-                >
                   Delivery
-                </motion.span>
                </motion.div>
           </motion.div>
           <motion.p 
@@ -299,7 +280,7 @@ export default function HeroBannerSection  () {
           </motion.div>
           <motion.img 
             src="/group.png" 
-            className="w-[133px] h-[158px] object-cover absolute top-[231px] left-[170px] max-[1100px]:top-[190px] max-[1000px]:top-[160px] max-[767px]:top-[120px]  max-[767px]:h-[120px] max-[767px]:w-[100px] max-[767px]:left-[130px] max-[500px]:h-[100px] max-[500px]:w-[80px] max-[380px]:h-[120px] max-[380px]:w-[110px] max-[350px]:top-[150px] max-[350px]:h-[100px] max-[350px]:w-[100px]" 
+            className="w-[133px] h-[158px] object-cover absolute top-[231px] left-[170px] max-[1100px]:top-[200px] max-[1000px]:top-[170px] max-[767px]:top-[120px]  max-[767px]:h-[120px] max-[767px]:w-[100px] max-[767px]:left-[130px] max-[500px]:h-[100px] max-[500px]:w-[80px] max-[380px]:h-[120px] max-[380px]:w-[110px] max-[350px]:top-[150px] max-[350px]:h-[100px] max-[350px]:w-[100px]" 
             alt=""
             initial={{ opacity: 0, scale: 0.5, rotate: -10 }}
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
