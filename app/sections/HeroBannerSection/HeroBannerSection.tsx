@@ -77,7 +77,7 @@ export default function HeroBannerSection  () {
         transition={{ duration: 0.3 }}
       />
       <img
-        className="absolute w-[1440px] h-[128] max-[1000px]:h-[80px] top-0 left-0 object-center"
+        className="absolute w-full h-[128] max-[1000px]:h-[80px] top-0  object-center z-0"
         alt="Background texture"
         src="/bg-texture.png"
       />

@@ -148,7 +148,7 @@ export default function CustomerTestimonialsSection  () {
   ];
 
   return (
-    <section className="w-full h-auto bg-[#fdfdfd] ">
+    <section className="w-full h-auto bg-[#fdfdfd]/90  ">
       <div className=" max-w-[1440px]">
         <h2 className="font-poppins font-bold text-[#bc430d] text-center text-[48px] max-[767px]:text-[36px] max-[767px]:leading-[38px] leading-[27px] mb-[90px] max-[1000px]:mb-[60px] max-[767px]:mb-10 max-[767px]:px-[25px]">
           Customer Feedback
