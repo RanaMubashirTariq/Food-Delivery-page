@@ -11,7 +11,7 @@ interface DealCardProps {
 
 const DealCard: React.FC<DealCardProps> = ({ imageSrc, index }) => (
   <motion.div 
-    className="relative flex-shrink-0 w-[284px] h-[360px] max-[1100px]:w-[220px] max-[1100px]:h-[300px] max-[767px]:w-[140px] max-[767px]:h-[200px] max-[767px]:rounded-[20px] rounded-[40px] max-[1100px]:rounded-[30px] overflow-hidden group hover-lift"
+    className="relative flex-shrink-0 w-[284px] h-[360px] max-[1100px]:w-[220px] max-[1100px]:h-[300px] max-[767px]:w-[140px] max-[767px]:h-[200px] max-[767px]:rounded-[20px] rounded-[40px] max-[1100px]:rounded-[30px] overflow-hidden group "
     initial={{ opacity: 0, y: 50, scale: 0.8 }}
     whileInView={{ opacity: 1, y: 0, scale: 1 }}
     transition={{ 
@@ -114,7 +114,7 @@ export default function TodayBestDealsSection  () {
           animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 30 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          See Today's Best Deals
+          See Today&apos;s Best Deals
         </motion.h2>
 
         <motion.div 
