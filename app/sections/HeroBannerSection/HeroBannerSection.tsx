@@ -135,20 +135,7 @@ export default function HeroBannerSection  () {
                                className="w-full h-full bg-transparent outline-none border-none text-white placeholder:text-white font-poppins font-medium text-xl leading-[100%] tracking-0 [&>svg]:hidden group" 
                              />
                        </div>
-                       <motion.div 
-                         className="relative"
-                         whileHover={{ scale: 1.1 }}
-                         whileTap={{ scale: 0.9 }}
-                       >
-                         <img src="/shoping-icon.png" className="w-[36px] h-8" alt="" />
-                         <motion.span 
-                           className="absolute -top-2 -right-2 bg-[#bc430d] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold"
-                           animate={{ scale: [1, 1.2, 1] }}
-                           transition={{ duration: 2, repeat: Infinity }}
-                         >
-                           3
-                         </motion.span>
-                       </motion.div>
+                         <img src="/shoping-icon.png" className="w-[36px] h-[32px]" alt="" />
                   </motion.div>
              </motion.div>
 
