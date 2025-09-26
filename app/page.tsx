@@ -13,7 +13,7 @@ import { ScrollProgress } from "./components/ParallaxComponents";
 
 export default function Home() {
   return (
-    <div className="w-full overflow-hidden relative">
+    <div className="w-full overflow-hidden relative bg-[#fdfdfd]">
       <ScrollProgress />
       <img src='/header-back-img.png' className="w-[1939px] h-[1639px] max-[1100px]:h-[1200px] object-cover top-0 absolute inset-0 z-0"/>
               <HeroBannerSection/>

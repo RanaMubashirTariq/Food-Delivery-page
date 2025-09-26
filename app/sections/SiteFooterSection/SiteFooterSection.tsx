@@ -2,8 +2,8 @@ import React from "react";
 
 export default function SiteFooterSection  () {
   return (
-    <footer className="w-full py-10  relative bg-[#fdfdfd]/90 ">
-      <img src="/footer-img.png" className="w-full h-full absolute inset-0 z-0 object-center " alt="" />
+    <footer className="w-full py-10  relative bg-[#fdfdfd]">
+      <img src="/footer-img.png" className="w-full h-full absolute inset-0 z-0 object-cover " alt="" />
       <div className="w-full max-w-[1440px] text-white relative z-20">
         <img src='/logo.png' className="w-[201px] h-[108px] max-[767px]:w-[150px] max-[767px]:h-[70px] max-[767px]:top-[-20px] max-[400px]:top-[10] absolute top-[-40px] left-[51px] max-[1100px]:left-[25px] max-[767px]:left-0"/>
         <div className="pt-[100px] max-[767px]:pt-[60px] max-[400px]:pt-[80px] flex items-start justify-between max-[800px]:flex-wrap gap-10 pl-[80px] max-[1100px]:px-[50px] max-[767px]:px-[25px] max-w-[1123px]">

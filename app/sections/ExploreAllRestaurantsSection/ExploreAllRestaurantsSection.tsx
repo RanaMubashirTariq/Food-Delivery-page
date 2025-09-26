@@ -54,7 +54,7 @@ export default function ExploreAllRestaurantsSection  () {
   ];
 
   return (
-    <section className="relative w-full bg-[#fdfdfd]/90 pt-20 max-[1000px]:pt-10 pb-5  px-20 max-[1100px]:px-[50px] max-[767px]:px-[25px]">
+    <section className="relative w-full bg-[#fdfdfd] pt-20 max-[1000px]:pt-10 pb-5  px-20 max-[1100px]:px-[50px] max-[767px]:px-[25px]">
          <img src="/img-1.png" className="w-[380px] h-[377px] absolute  z-0 top-[107px] max-[800px]:top-[180px] right-[0px] object-cover max-[800px]:w-[200px] max-[800px]:h-[220px]" alt="" />
          <img src="/img-2.png" className="w-[378px] h-[446px] absolute  z-0 top-[187px] left-[-107px] object-contain max-[800px]:w-[200px] max-[800px]:h-[300px] max-[800px]:left-[-50px] " alt="" />
          <img src="/img-3.png" className="w-[382px] h-[356px] absolute  z-0 bottom-[-230px] left-[-74px] object-cover max-[800px]:w-[200px] max-[800px]:h-[220px] max-[800px]:bottom-[-100px] max-[800px]:left-[-40px]" alt="" />

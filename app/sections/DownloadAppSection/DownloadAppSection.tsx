@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 
 export default function DownloadAppSection  () {
   return (
-    <section className="w-full bg-[#fdfdfd]/90   pt-[99px] max-[1000px]:py-[60px] max-[767px]:py-10 px-20 max-[1100px]:px-[50px] max-[767px]:px-[25px] relative">
+    <section className="w-full bg-[#fdfdfd]  pt-[99px] max-[1000px]:py-[60px] max-[767px]:py-10 px-20 max-[1100px]:px-[50px] max-[767px]:px-[25px] relative">
 
 <img  className="absolute top-[-200px] max-[1000px]:top-[-100px] right-[-126px] rotate-[40deg] w-[393px] h-[366px] max-[1000px]:w-[200px] max-[1000px]:h-[220px] max-[500px]:w-[130px] max-[500px]:w-[150px] max-[1000px]:right-[-40px] object-contain "  alt="Background pattern"  src="/img-7.png" />
 
