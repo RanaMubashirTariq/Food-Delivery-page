@@ -22,7 +22,7 @@ export default function EnjoyDiscountsSection  () {
           <div className="flex  flex-row items-center  p-4  bg-[#bc430d]/50 w-[522px] max-[1100px]:w-[450px] max-[767px]:w-[100%] h-[82px] max-[767px]:h-[60px] max-[767px]:rounded-[30px] rounded-[40px] border border-[1px] border-white">
             <Input
               type="text"
-              placeholder="Enter your coupon"
+              placeholder="Enter your address"
               className="flex-1  focus:ring-0 focus:outline-none  w-full bg-transparent border-none  shadow-none placeholder:text-[#cdcaca] text-[#cdcaca] text-xl max-[1000px]:text-lg leading-[27px] max-[767px]:text-sm max-[767px]:leading-5"
             />
             <Button className="bg-transparent border-none outline-none  rounded-full  h-[52px] max-[767px]:h-10 max-[767px]:w-[120px] px-8    flex items-center justify-center  ">
