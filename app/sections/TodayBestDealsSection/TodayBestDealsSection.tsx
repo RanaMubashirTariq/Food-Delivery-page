@@ -11,19 +11,11 @@ interface DealCardProps {
 
 const DealCard: React.FC<DealCardProps> = ({ imageSrc, index }) => (
   <motion.div 
-    className="relative flex-shrink-0 w-[284px] h-[360px] max-[1100px]:w-[220px] max-[1100px]:h-[300px] max-[767px]:w-[140px] max-[767px]:h-[200px] max-[767px]:rounded-[20px] rounded-[40px] max-[1100px]:rounded-[30px] overflow-hidden group "
-    initial={{ opacity: 0, y: 40, scale: 0.8 }}
-    whileInView={{ opacity: 1, y: 0, scale: 1 }}
-    transition={{ 
-      duration: 0.6, 
-      delay: index * 0.1,
-      ease: "easeOut"
-    }}
-    whileHover={{ 
-      scale: 0.9,
-      rotateY: 5,
-      transition: { duration: 0.3 }
-    }}
+    className="relative flex-shrink-0 w-[284px] h-[360px] max-[1100px]:w-[220px] max-[1100px]:h-[300px] max-[767px]:w-[140px] max-[767px]:h-[200px] max-[767px]:rounded-[20px] rounded-[40px] max-[1100px]:rounded-[30px] overflow-hidden  "
+    initial={{ opacity: 0, scale: 0.8 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.6, delay: 0.3, ease: "easeIn" }}
+    whileHover={{ scale: 0.9, rotateY: 5, transition: { duration: 0.3 } }}
     viewport={{ once: true, margin: "-100px" }}
   >
     <motion.img
@@ -118,7 +110,7 @@ export default function TodayBestDealsSection  () {
         </motion.h2>
 
         <motion.div 
-          className="flex items-center  overflow-x-scroll scrollbar-hide  gap-[60px] max-[1100px]:gap-10 max-[767px]:gap-5 mb-10 md:mb-16 sm:mb-10"
+          className="flex items-center   overflow-x-scroll scrollbar-hide  gap-[60px] max-[1100px]:gap-10 max-[767px]:gap-5 mb-10 md:mb-16 sm:mb-10"
           initial={{ opacity: 0 }}
           animate={{ opacity: isVisible ? 1 : 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}

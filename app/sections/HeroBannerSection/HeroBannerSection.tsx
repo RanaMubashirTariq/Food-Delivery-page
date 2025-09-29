@@ -68,7 +68,7 @@ export default function HeroBannerSection  () {
         transition={{ duration: 0.3 }}
       />
       <motion.img
-        className="absolute w-[334px] h-[344px] top-[573px] right-[512px] object-cover max-[1400px]:w-[250px] max-[1400px]:h-[270px] max-[767px]:w-[150px] max-[767px]:h-[170px] max-[767px]:top-[600px] max-[767px]:left-[30px] max-[1400px]:right-[412px] max-[1100px]:right-[270px] max-[1100px]:top-[450px] max-[1020px]:top-[850px] max-[1020px]:left-[50px]"
+        className="absolute w-[334px] h-[344px] top-[573px] right-[512px] object-cover max-[1400px]:w-[250px] max-[1400px]:h-[270px] max-[767px]:w-[170px] max-[767px]:h-[160px] max-[767px]:top-[600px] max-[767px]:left-[30px] max-[1400px]:right-[412px] max-[1100px]:right-[270px] max-[1100px]:top-[450px] max-[1020px]:top-[850px] max-[1020px]:left-[50px]"
         alt="Pizza"
         src="/pizza.png"
         variants={floatVariants}
@@ -164,7 +164,7 @@ export default function HeroBannerSection  () {
         {/* Mobile Nav (only below 1000px) */}
         {isOpen && (
           <motion.div 
-            className="hidden max-[1000px]:block hidden bg-[#bc430d] text-white px-6 py-4 space-y-4 absolute top-[80px] right-[30px] w-[250px] rounded-xl z-50"
+            className="hidden max-[1000px]:block hidden bg-[#bc430d] text-white px-6 py-4 space-y-4 absolute top-[80px] max-[500px]:top-[100px] max-[500px]:h-[35vh] right-[20px] w-[250px] max-[500px]:w-[92%] max-[400px]:w-[90%] max-[365px]:w-[89%] rounded-xl z-50"
             initial={{ opacity: 0, scale: 0.8, y: -20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: -20 }}
@@ -195,9 +195,15 @@ export default function HeroBannerSection  () {
               Shop
             </motion.a>
             <motion.div 
-              className="flex items-center justify-between mt-4 border border-white rounded-full px-4 py-2 hover-lift"
+              className="flex items-center justify-between mt-4 max-[500px]:mt-10 border border-white rounded-full px-4 py-2 hover-lift"
               whileHover={{ scale: 1.02 }}
             >
+               <motion.img 
+                               src="search-icon.png" 
+                               className="w-5 h-5 mr-[10px]" 
+                               alt=""
+                               whileHover={{ rotate: 15 }}
+                             />
               <input
                 type="search"
                 placeholder="Search"

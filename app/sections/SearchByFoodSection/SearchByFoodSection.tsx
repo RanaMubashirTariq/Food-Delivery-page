@@ -16,17 +16,10 @@ const FoodCategoryCard: React.FC<FoodCategoryCardProps> = ({
 }) => (
   <motion.div 
     className="cursor-pointer flex flex-col items-center space-y-2 flex-shrink-0 w-[218px] max-[767px]:w-[150px] "
-    initial={{ opacity: 0, y: 50, scale: 0.8 }}
-    whileInView={{ opacity: 1, y: 0, scale: 1 }}
-    transition={{ 
-      duration: 0.6, 
-      delay: index * 0.1,
-      ease: "easeOut"
-    }}
-    whileHover={{ 
-      scale: 0.9,
-      transition: { duration: 0.3 }
-    }}
+    initial={{ opacity: 0, scale: 0.8 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
+    whileHover={{ scale: 0.9, rotateY: 5, transition: { duration: 0.3 } }}
     viewport={{ once: true, margin: "-50px" }}
   >
     <motion.div 

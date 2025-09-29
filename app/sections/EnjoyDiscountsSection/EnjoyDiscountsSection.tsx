@@ -23,7 +23,7 @@ export default function EnjoyDiscountsSection  () {
             <Input
               type="text"
               placeholder="Enter your address"
-              className="flex-1  focus:ring-0 focus:outline-none  w-full bg-transparent border-none  shadow-none placeholder:text-[#cdcaca] text-[#cdcaca] text-xl max-[1000px]:text-lg leading-[27px] max-[767px]:text-sm max-[767px]:leading-5"
+              className="flex-1  focus-visible:ring-0 focus:outline-none  w-full bg-transparent border-none  shadow-none placeholder:text-[#cdcaca] text-[#cdcaca] text-xl max-[1000px]:text-lg leading-[27px] max-[767px]:text-sm max-[767px]:leading-5"
             />
             <Button className="bg-transparent border-none outline-none  rounded-full  h-[52px] max-[767px]:h-10 max-[767px]:w-[120px] px-8    flex items-center justify-center  ">
               <img className="w-5 h-5 max-[767px]:w-4 max-[767px]:h-4 inline-flex mr-2 mb-[5px]" alt="Location icon" src="/location-icon.png" />
