@@ -85,7 +85,7 @@ export default function HeroBannerSection  () {
       <div className="w-full  relative z-10">
         {/* Header Section */}
         <motion.header 
-          className="flex  items-center justify-between"
+          className="flex  items-center justify-between "
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -164,7 +164,7 @@ export default function HeroBannerSection  () {
         {/* Mobile Nav (only below 1000px) */}
         {isOpen && (
           <motion.div 
-            className="hidden max-[1000px]:block hidden bg-[#bc430d] text-white px-6 py-4 space-y-4 absolute top-[80px] max-[500px]:top-[100px] max-[500px]:h-[35vh] right-[20px] w-[250px] max-[500px]:w-[92%] max-[400px]:w-[90%] max-[365px]:w-[89%] rounded-xl z-50"
+            className="hidden max-[1000px]:block  bg-[#bc430d] text-white px-6 py-10 space-y-4 absolute top-[40px]  max-[400px]:h-[88vh] max-[1000px]:h-[80vh] right-[0px] w-[250px]   rounded-[20px] z-50"
             initial={{ opacity: 0, scale: 0.8, y: -20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: -20 }}

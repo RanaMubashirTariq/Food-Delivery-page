@@ -20,14 +20,14 @@ export default function DownloadAppSection  () {
           Lorem ipsum dolor sit amet consectetur mi urna tellus dignissim duis at in tempor.
           </p>
           <div className="flex justify-center lg:justify-start space-x-4">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer" className="relative z-20">
               <img
                 className="h-12 object-contain"
                 alt="App Store badge"
                 src="/app-store.png"
               />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" className="relative z-20">
               <img
                 className="h-12 object-contain"
                 alt="Google Play badge"
@@ -38,26 +38,16 @@ export default function DownloadAppSection  () {
         </div>
         <div className="relative w-1/2 max-[1020px]:w-[70%] max-[767px]:w-[100%]">
 
-          <motion.div
-             whileHover={{scale: 0.9}}
-             whileTap={{scale: 0.8}}
-          >
           <img
             className="absolute w-[160px] h-[160px] max-[500px]:h-[100px] max-[500px]:w-[100px] top-[-50px] max-[1020px]:top-[-300px] max-[767px]:top-[-250px] max-[500px]:top-[-180px] max-[500px]:left-[50px] max-[420px]:left-[30px] max-[400px]:left-[20px] max-[365px]:left-[0px] max-[767px]:left-[50px] max-[1020px]:left-[150px] max-[900px]:left-[80px] left-[200px] max-[1300px]:left-[80px] object-contain z-10"
             alt="QR code"
             src="/qr-code.png"
           />
-          </motion.div>
-          <motion.div
-             whileHover={{scale: 0.9}}
-             whileTap={{scale: 0.8}}
-          >
           <img
             className="absolute w-[437px] h-[520px] max-[767px]:w-[100%] max-[500px]:h-[300px] top-[-280px] max-[1020px]:top-[-500px] max-[767px]:top-[-450px] max-[500px]:top-[-300px] max-[500px]:right-[-50px] right-[-50px] max-[1300px]:right-[-100px] object-cover "
             alt="Delivery scooter"
             src="/delivery-scooter.png"
           />
-            </motion.div> 
         </div>
       </div>
     </section>

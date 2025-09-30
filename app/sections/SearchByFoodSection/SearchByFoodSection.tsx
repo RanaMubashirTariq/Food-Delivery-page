@@ -98,7 +98,7 @@ export default function SearchByFoodSection  () {
           transition={{ duration: 0.6 }}
         >
           <motion.h2 
-            className="font-poppins font-bold text-[#bc430d]  text-[48px] max-[767px]:text-[36px] max-[767px]:leading-[80px] leading-[112.000px]"
+            className="font-poppins font-bold text-[#bc430d]  text-[48px] max-[767px]:text-[36px] max-[767px]:leading-[70px] max-[340px]:leading-[40px] leading-[112.000px]"
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : -30 }}
             transition={{ duration: 0.6, delay: 0.2 }}
