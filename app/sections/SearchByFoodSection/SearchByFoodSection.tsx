@@ -7,15 +7,17 @@ interface FoodCategoryCardProps {
   imageSrc: string;
   name: string;
   index: number;
+  className?: string;
 }
 
 const FoodCategoryCard: React.FC<FoodCategoryCardProps> = ({
   imageSrc,
   name,
   index,
+  className,
 }) => (
   <motion.div 
-    className="cursor-pointer flex flex-col items-center space-y-2 flex-shrink-0 w-[218px] max-[767px]:w-[150px] "
+    className={`cursor-pointer flex flex-col items-center space-y-2 flex-shrink-0 w-[218px] max-[767px]:w-[150px] ${className || ''}`}
     initial={{ opacity: 0, scale: 0.8 }}
     whileInView={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
@@ -106,7 +108,7 @@ export default function SearchByFoodSection  () {
             Search by Food
           </motion.h2>
           <motion.div 
-            className="flex items-center space-x-4 relative z-20"
+            className="flex items-center space-x-4 relative z-20 max-[767px]:hidden"
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : 30 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -170,9 +172,61 @@ export default function SearchByFoodSection  () {
               imageSrc={category.imageSrc}
               name={category.name}
               index={index}
+              className={`${index  ===foodCategories.length - 1 ? 'mr-[80px] max-[1100px]:mr-[50px] max-[767px]:mr-[25px]' : ''}`}
             />
           ))}
         </motion.div>
+
+        <motion.div 
+            className="flex items-center justify-end w-full space-x-4 relative z-20 max-[767px]:flex hidden px-[25px] pt-[30px]"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : 30 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+           <motion.a
+              href="#"
+              className="flex gap-[10px] font-poppins text-[#bc430d] text-base font-bold text-lg leading-[100%] whitespace-nowrap "
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              View All
+              <motion.img 
+                src="/arrow-left.png" 
+                className="w-[10px] h-[16px]" 
+                alt=""
+                whileHover={{ x: 5 }}
+                transition={{ duration: 0.2 }}
+              />
+            </motion.a>
+            <div className="flex space-x-2">
+              <motion.button 
+                onClick={prevCard} 
+                className="flex items-center justify-center w-[50px] h-[50px] max-[767px]:w-10 max-[767px]:h-10 rounded-full bg-[#bc430d] "
+                whileHover={{ scale: 0.9 }}
+                whileTap={{ scale: 0.8 }}
+              >
+                <motion.img
+                  className="w-full h-full"
+                  alt="Left arrow"
+                  src="/arrow-left-2.png"
+                  
+                />
+              </motion.button>
+              <motion.button 
+                onClick={nextCard} 
+                className="flex items-center justify-center w-[50px] h-[50px] max-[767px]:w-10 max-[767px]:h-10 "
+                whileHover={{ scale: 0.9 }}
+                whileTap={{ scale: 0.8 }}
+              >
+                <motion.img
+                  className="w-full h-full rotate-[180deg]"
+                  alt="Right arrow"
+                  src="/arrow-left-2.png"
+                  
+                />
+              </motion.button>
+            </div>
+          </motion.div>
       </div>
     </section>
   );
