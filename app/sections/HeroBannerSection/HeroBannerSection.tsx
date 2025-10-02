@@ -58,13 +58,12 @@ export default function HeroBannerSection  () {
     <section className="relative w-full h-[1000px] max-[1300px]:h-[900px] max-[1100px]:h-[750px] max-[1020px]:h-[1150px] max-[767px]:h-[800px] max-[500px]:h-[800px]  bg-[#fdfdfd]/90 overflow-hidden">
       {/* Background elements */}
       <motion.img
-        className="absolute w-[683px] h-[668px] top-[145px] max-[1020px]:top-[550px] max-[767px]:top-[400px] right-0 object-center max-[1400px]:w-[550px] max-[1400px]:h-[550px] max-[1100px]:w-[400px] max-[1100px]:h-[450px] max-[767px]:h-[300px] max-[1020px]:w-[80%]"
+        className="absolute w-[783px] max-[1700px]:w-[683px] h-[668px] top-[145px] max-[1020px]:top-[550px] max-[767px]:top-[400px] right-0 object-center max-[1400px]:w-[550px] max-[1400px]:h-[550px] max-[1100px]:w-[400px] max-[1100px]:h-[450px] max-[767px]:h-[300px] max-[1020px]:w-[80%]"
         alt="Ribs and fire"
         src="/ribs-and-fire.png"
         variants={imageVariants}
         initial="hidden"
         animate="visible"
-        whileHover={{ scale: 1.05 }}
         transition={{ duration: 0.3 }}
       />
       <motion.img
@@ -117,10 +116,8 @@ export default function HeroBannerSection  () {
             </NavigationMenuList>
           </NavigationMenu>
 
-                  <motion.div 
-                    className="w-[224px] h-10 px-[19px] flex items-center justify-between border border-[1px] rounded-[30px] border-white hover-lift"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
+                  <div 
+                    className="w-[224px] h-10 px-[19px] flex items-center justify-between border border-[1px] rounded-[30px] border-white "
                   >
                        <div className="flex items-center gap-[12px]">
                              <motion.img 
@@ -136,7 +133,7 @@ export default function HeroBannerSection  () {
                              />
                        </div>
                          <img src="/shoping-icon.png" className="w-[36px] h-[32px]" alt="" />
-                  </motion.div>
+                  </div>
              </motion.div>
 
 
@@ -232,7 +229,7 @@ export default function HeroBannerSection  () {
         >
           <motion.div className="flex" variants={itemVariants}>
              <motion.h1 
-               className="font-mochiy-pop-one font-regular text-[128px] max-[1300px]:text-[110px] max-[1100px]:text-[90px] max-[767px]:text-[60px] max-[500px]:text-[48px] leading-[100%] tracking-[-8%] text-[#bc430d]"
+               className="font-mochiy-pop-one font-regular text-[156px] max-[1500px]:text-[128px] max-[1300px]:text-[110px] max-[1100px]:text-[90px] max-[767px]:text-[60px] max-[500px]:text-[48px] leading-[100%] tracking-[-8%] text-[#bc430d]"
                whileHover={{ scale: 1.05 }}
                transition={{ duration: 3, repeat: Infinity }}
              >
@@ -240,7 +237,7 @@ export default function HeroBannerSection  () {
              </motion.h1>
               
                <motion.div 
-                 className="w-[280px] max-[1300px]:w-[260px] max-[500px]:w-[100px] max-[767px]:w-[150px] flex flex-col items-start font-poppins font-bold text-[#000000]/70  text-5xl leading-[57px] max-[1300px]:text-[48px] max-[1300px]:leading-[47px] max-[1100px]:text-[40px] max-[1300px]:leading-[37px] max-[767px]:text-[28px] max-[767px]:leading-[24px] max-[500px]:text-[22px] max-[500px]:mt-3 max-[1100px]:mt-[20px]   mt-[30px]"
+                 className="w-[280px] max-[1300px]:w-[260px] max-[500px]:w-[100px] max-[767px]:w-[150px] flex flex-col items-start font-poppins font-bold text-[#000000]/70 text-[64px]  max-[1500px]:text-5xl leading-[57px] max-[1300px]:text-[48px] max-[1300px]:leading-[47px] max-[1100px]:text-[40px] max-[1300px]:leading-[37px] max-[767px]:text-[28px] max-[767px]:leading-[24px] max-[500px]:text-[22px] max-[500px]:mt-3 max-[1100px]:mt-[20px] mt-[50px] max-[1500px]:mt-[30px]"
                  variants={itemVariants}
                >
                   Food
@@ -273,7 +270,7 @@ export default function HeroBannerSection  () {
           </motion.div>
           <motion.img 
             src="/group.png" 
-            className="w-[133px] h-[158px] object-cover absolute top-[231px] left-[170px] max-[1100px]:top-[200px] max-[1000px]:top-[170px] max-[767px]:top-[120px]  max-[767px]:h-[120px] max-[767px]:w-[100px] max-[767px]:left-[130px] max-[500px]:h-[100px] max-[500px]:w-[80px] max-[380px]:h-[120px] max-[380px]:w-[110px] max-[350px]:top-[150px] max-[350px]:h-[100px] max-[350px]:w-[100px]" 
+            className="w-[133px] h-[158px] object-cover absolute top-[250px] max-[1500px]:top-[231px] left-[170px] max-[1100px]:top-[200px] max-[1000px]:top-[170px] max-[767px]:top-[120px]  max-[767px]:h-[120px] max-[767px]:w-[100px] max-[767px]:left-[130px] max-[500px]:h-[100px] max-[500px]:w-[80px] max-[380px]:h-[120px] max-[380px]:w-[110px] max-[350px]:top-[150px] max-[350px]:h-[100px] max-[350px]:w-[100px]" 
             alt=""
             initial={{ opacity: 0, scale: 0.5, rotate: -10 }}
             animate={{ opacity: 1, scale: 1, rotate: 0 }}

@@ -47,12 +47,12 @@ export default function FAQSection  () {
      
      
      
-      <div className=" mx-auto  max-w-[1440px] relative z-10">
-        <h2 className="mb-[114px] max-[1000px]:mb-[70px] max-[767px]:mb-[40px] font-poppins font-bold text-[#bc430d] text-center  text-[48px] max-[767px]:text-[36px] leading-[1.2] mb-10 max-[767px]:px-[25px]">
+      <div className=" mx-auto w-full max-[1500px]:max-w-[1440px] relative z-10">
+        <h2 className="mb-[114px] max-[1000px]:mb-[70px] max-[767px]:mb-[40px] font-poppins font-bold text-[#bc430d] text-center text-[56px] max-[1500px]:text-[48px] max-[767px]:text-[36px] leading-[1.2] mb-10 max-[767px]:px-[25px]">
           Frequently Asked Questions
         </h2>
 
-        <Accordion type="single" collapsible className="space-y-6 w-full max-w-[932px] mx-auto max-[1100px]:px-[50px] max-[767px]:px-[25px]">
+        <Accordion type="single" collapsible className="space-y-6 w-full max-w-[1200px] max-[1500px]:max-w-[932px] mx-auto max-[1100px]:px-[50px] max-[767px]:px-[25px]">
           {faqItems.map((item, index) => (
             <AccordionItem
               key={`item-${index}`}

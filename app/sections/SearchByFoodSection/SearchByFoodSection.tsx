@@ -17,7 +17,7 @@ const FoodCategoryCard: React.FC<FoodCategoryCardProps> = ({
   className,
 }) => (
   <motion.div 
-    className={`cursor-pointer flex flex-col items-center space-y-2 flex-shrink-0 w-[218px] max-[767px]:w-[150px] ${className || ''}`}
+    className={`cursor-pointer flex flex-col items-center gap-6 flex-shrink-0 w-[280px] max-[1700px]:w-[250px] max-[1500px]:w-[218px] max-[767px]:w-[150px] ${className || ''}`}
     initial={{ opacity: 0, scale: 0.8 }}
     whileInView={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
@@ -25,16 +25,16 @@ const FoodCategoryCard: React.FC<FoodCategoryCardProps> = ({
     viewport={{ once: true, margin: "-50px" }}
   >
     <motion.div 
-      className="w-full h-[270px] max-[767px]:h-[180px] rounded-full overflow-hidden border-4 border-white flex-shrink-0 relative"
+      className="w-full  max-[1500px]:h-[270px] max-[767px]:h-[180px] rounded-full overflow-hidden border-4 border-white flex-shrink-0 relative"
     >
       <motion.img
-        className="w-full h-[218px] max-[767px]:h-[150px] rounded-full object-center"
+        className="w-full max-[1500px]:h-[218px] max-[767px]:h-[150px] rounded-full object-center"
         src={imageSrc}
         alt={name}
       />
     </motion.div>
     <motion.p 
-      className="font-poppins font-bold text-[#bc430d] text-[22px] max-[767px]:text-[16px] leading-[120%] text-center"
+      className="font-poppins font-bold text-[#bc430d] text-[24px] max-[1500px]:text-[22px] max-[767px]:text-[16px] leading-[120%] text-center"
       whileHover={{ scale: 0.9 }}
       transition={{ duration: 0.2 }}
     >
@@ -92,15 +92,15 @@ export default function SearchByFoodSection  () {
 
   return (
     <section ref={ref} className="w-full bg-[#fdfdfd] py-10 md:py-20">
-      <div className=" mx-auto max-w-[1440px]">
+      <div className=" mx-auto w-full max-[1500px]:max-w-[1440px]">
         <motion.div 
-          className="flex items-center justify-between mb-10 md:mb-16 px-20 max-[1100px]:px-[50px] max-[767px]:px-[25px] max-[767px]:flex-col max-[767px]:items-start"
+          className="flex items-center justify-between mb-10 md:mb-16 px-[160px] max-[1500px]:px-20 max-[1100px]:px-[50px] max-[767px]:px-[25px] max-[767px]:flex-col max-[767px]:items-start"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 30 }}
           transition={{ duration: 0.6 }}
         >
           <motion.h2 
-            className="font-poppins font-bold text-[#bc430d]  text-[48px] max-[767px]:text-[36px] max-[767px]:leading-[70px] max-[340px]:leading-[40px] leading-[112.000px]"
+            className="font-poppins font-bold text-[#bc430d] text-[56px] max-[1500px]:text-[48px] max-[767px]:text-[36px] max-[767px]:leading-[70px] max-[340px]:leading-[40px] leading-[112.000px]"
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : -30 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -115,7 +115,7 @@ export default function SearchByFoodSection  () {
           >
             <motion.a
               href="#"
-              className="flex gap-[10px] font-poppins text-[#bc430d] text-base font-bold text-lg leading-[100%] whitespace-nowrap "
+              className="flex gap-[10px] font-poppins text-[#bc430d] text-base font-bold text-xl max-[1500px]:text-lg leading-[100%] whitespace-nowrap "
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -161,7 +161,7 @@ export default function SearchByFoodSection  () {
 
         <motion.div 
           ref={containerRef} 
-          className="flex gap-[34.2px] overflow-x-auto pb-4 scrollbar-hide pl-20 max-[1100px]:pl-[50px] max-[767px]:pl-[25px]"
+          className="flex gap-[34.2px] overflow-x-auto pb-4 scrollbar-hide pl-[160px] max-[1500px]:pl-20 max-[1100px]:pl-[50px] max-[767px]:pl-[25px]"
           initial={{ opacity: 0 }}
           animate={{ opacity: isVisible ? 1 : 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}

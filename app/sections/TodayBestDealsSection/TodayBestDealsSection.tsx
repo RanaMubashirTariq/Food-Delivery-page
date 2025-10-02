@@ -11,7 +11,7 @@ interface DealCardProps {
 
 const DealCard: React.FC<DealCardProps> = ({ imageSrc, index }) => (
   <motion.div 
-    className="relative flex-shrink-0 w-[284px] h-[360px] max-[1100px]:w-[220px] max-[1100px]:h-[300px] max-[767px]:w-[140px] max-[767px]:h-[200px] max-[767px]:rounded-[20px] rounded-[40px] max-[1100px]:rounded-[30px] overflow-hidden  "
+    className="relative flex-shrink-0 w-[320px] h-[400px] max-[1500px]:w-[284px] max-[1500px]:h-[360px] max-[1100px]:w-[220px] max-[1100px]:h-[300px] max-[767px]:w-[140px] max-[767px]:h-[200px] max-[767px]:rounded-[20px] rounded-[40px] max-[1100px]:rounded-[30px] overflow-hidden  "
     initial={{ opacity: 0, scale: 0.8 }}
     whileInView={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.6, delay: 0.3, ease: "easeIn" }}
@@ -99,7 +99,7 @@ export default function TodayBestDealsSection  () {
         transition={{ duration: 0.8, delay: 0.8 }}
       />
       
-      <div className=" mx-auto px-4 md:px-8 max-w-[1440px] relative z-10">
+      <div className=" mx-auto w-full max-[1500px]:max-w-[1440px] relative z-10 pl-[160px] max-[1500px]:pl-0">
         <motion.h2 
           className="font-poppins font-bold text-white text-center max-[767px]:text-[36px] max-[1100px]:text-[48px] text-[64px] leading-[1.2] mb-10 md:mb-16 sm:mb-15"
           initial={{ opacity: 0, y: 30 }}
@@ -130,7 +130,7 @@ export default function TodayBestDealsSection  () {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Button className=" text-white font-bold    w-[116px] h-[52px] px-8 text-xl max-[1100px]:text-lg max-[767px]:text-sm max-[767px]:h-10 max-[767px]:leading-5 leading-[27px] font-poppins font-bold shadow-md border border-[1px] border-white rounded-full hover-lift">
+            <Button className="cursor-pointer text-white font-bold    w-[116px] h-[52px] px-8 text-xl max-[1100px]:text-lg max-[767px]:text-sm max-[767px]:h-10 max-[767px]:leading-5 leading-[27px] font-poppins font-bold shadow-md border border-[1px] border-white rounded-full ">
               See All
             </Button>
           </motion.div>
