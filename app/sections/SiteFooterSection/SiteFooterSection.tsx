@@ -95,10 +95,10 @@ export default function SiteFooterSection  () {
           © 2025  All rights reserved
           </p>
           <div className="flex space-x-4 max-[820px]:mx-auto">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
                 <img className="h-10 object-contain" alt="Google Play" src="/google-play.png" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
                 <img className="h-10 object-contain" alt="App Store" src="/app-store.png" />
               </a>
             </div>
